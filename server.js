@@ -16,11 +16,11 @@ const db = knex({
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false}
-    host: 'dpg-d6gks24r85hc7391g9v0-a.oregon-postgres.render.com',
+    host: process.env.DATABASE_HOST,
     port: 5432,
-    user: 'smartbrain_postgres_ozjf_user',
-    password: 'HRY3Lm5lTp8dGPD2QilVoZ8cxd4iaeMf',
-    database: 'smartbrain_postgres_ozjf'
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PW,
+    database: process.env.DATABASE_DB
   }
 });
 
