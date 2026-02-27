@@ -8,15 +8,18 @@ const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false}
+    host: 'dpg-d6gks24r85hc7391g9v0-a',
     port: 5432,
-    user: 'postgres',
-    password: 'pokee',
-    database: 'smartbrain'
+    user: 'smartbrain_postgres_ozjf_user',
+    password: 'HRY3Lm5lTp8dGPD2QilVoZ8cxd4iaeMf',
+    database: 'smartbrain_postgres_ozjf'
   }
 });
 
