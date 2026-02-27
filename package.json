@@ -1,0 +1,24 @@
+{
+  "name": "projectbrain-api",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^2.2.2",
+    "clarifai": "^2.9.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "pg": "^8.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
