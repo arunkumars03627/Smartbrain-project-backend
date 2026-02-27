@@ -16,7 +16,7 @@ const db = knex({
   connection: {
     connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false}
-    host: 'dpg-d6gks24r85hc7391g9v0-a',
+    host: 'dpg-d6gks24r85hc7391g9v0-a.oregon-postgres.render.com',
     port: 5432,
     user: 'smartbrain_postgres_ozjf_user',
     password: 'HRY3Lm5lTp8dGPD2QilVoZ8cxd4iaeMf',
