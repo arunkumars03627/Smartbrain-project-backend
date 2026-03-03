@@ -2,8 +2,8 @@ const Clarifai = require('clarifai');
 
 const returnClarifaiRequestOptions = (imageUrl) => {
   const PAT = 'ffdc7ec663824d7d97effb97c535d20a';
-  const USER_ID = 'clarifai';       
-  const APP_ID = 'main';
+  const USER_ID = 'arunkumars';       
+  const APP_ID = 'test';
 
   const IMAGE_URL = imageUrl;
 
